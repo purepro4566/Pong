@@ -86,9 +86,9 @@
     // Event listener for mouse movement
     document.addEventListener("mousemove", function(event) {
       let rect = canvas.getBoundingClientRect();
-      paddleY = event.clientY - rect.top - paddleHeight/2;
-      if(paddleY < 0) paddleY = 0;
-      if(paddleY > canvas.height - paddleHeight) paddleY = canvas.height - paddleHeight;
+      paddleX = event.clientX - rect.top - paddleWidth/2;
+      if(paddleX < 0) paddleX = 0;
+      if(paddleX > canvas.width - paddleWidth) paddleX = canvas.Width - paddlewidth;
    });
 </script>
 
